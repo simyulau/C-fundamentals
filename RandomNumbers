@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+typedef struct RandomNumbers_struct{
+   int var1;
+   int var2;
+   int var3;
+}RandomNumbers;
+
+RandomNumbers SetRandomValues(int low, int high){
+   RandomNumbers sample;
+   sample.var1 = rand() % (high -low + 1) + low;
+   sample.var2 = rand() % (high -low + 1) + low;
+   sample.var3 = rand() % (high -low + 1) + low;
+
+   return sample;
+}
+void GetRandomValues(RandomNumbers r){
+   printf("Random values: %d, %d, %d\n", r.var1, r.var2, r.var3);
+}
+
+int GetVar1(RandomNumbers r){
+   return r.var1;
+}
+int GetVar2(RandomNumbers r){
+   return r.var2;
+}
+int GetVar3(RandomNumbers r){
+   return r.var3;
+}
+
+int main() {
+	srand(time(0));   // Set seed value for random numnbers.
+
+	int low;
+	int high;
+
+	scanf("%d", &low);
+	scanf("%d", &high);
+
+	RandomNumbers r = SetRandomValues(low, high);
+	GetRandomValues(r);
+
+	return 0;
+}
