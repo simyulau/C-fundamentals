@@ -1,0 +1,68 @@
+// Complete the Swap() method in main.c to exchange the values of the num field of two Number struct objects: 
+// num1 and num2.
+
+// Hint: Create a Number struct to see the num data member.
+
+// Ex: If num1 is 19 and num2 is 178, calling Swap(num1, num2) will swap the values,
+// so that num1 becomes 178 and num2 becomes 19.
+
+//This is a reflection of zybook ch 7+8, using pointer and struc application
+
+
+#include <stdlib.h>
+#include <stdio.h>
+
+typedef struct NumberStruct {
+    int num;
+} Number;
+
+void swap(Number* firstNum, Number* secondNum){
+    //consider edge cases:
+    if ((firstNum == NULL) || (secondNum == NULL)){
+        return; //not do anything
+    }
+    
+    //Assuming user does input numbers......
+    // Number* temp;
+    // temp = (Number*)malloc (sizeof(Number));
+    //no need to create a pointer for temp, the struct field are int
+    int temp;
+    //accessing the field data member via use of ->
+    //equivalent to (*firstNum).num  ; simpler
+    temp = firstNum->num;
+    (*firstNum).num = secondNum ->num;
+    secondNum-> num = temp;
+}
+
+
+int main (){
+
+//declare and initialize 2 pointers for swapping
+Number* num1 = NULL;
+Number* num2 = NULL;
+
+//take inputs
+printf("Provide 2 integer numbers. ");
+printf("Number 1 value: ");
+//scanf("%d", &num1); scanf("%d", &num2);
+//use malloc instead
+num1 = (Number*)malloc(sizeof(Number));
+scanf(" %d", &num1->num);
+printf("Number 2 value: ");
+num2 = (Number*)malloc(sizeof(Number));
+scanf(" %d", &num2->num);
+
+//*REMEMBER: 1) declare initial ptr to NULL 2) malloc to allocate mem address 3) scanf to put values IN
+
+//print values before swapping
+printf("Before swapping - num1 is %d, num2 is %d\n", num1->num, num2->num);
+swap(num1, num2);
+//after swapping
+printf("After swapping - num1 is %d, num2 is %d\n", num1->num, num2->num);
+
+
+
+
+
+
+}
