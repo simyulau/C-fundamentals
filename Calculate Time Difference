@@ -1,0 +1,109 @@
+// Time* CreateTime(int hours, int minutes, int seconds)
+// Allocate and return a new Time according to the parameters
+
+// Time* TimeDifference(Time* end, Time* start)
+// Allocate a new Time to store the computed time difference
+// Compute the amount of time elapsed from start to end. Assume start is always before end.
+// Adjust for negative minutes and seconds.
+// Return the pointer to Time that contains the difference
+// main() calls ReadTime() to read input from a user and uses the input to create a new Time by calling CreateTime(). PrintTime() is provided to output Time in 24 hour format (hh:mm:ss).
+
+// Ex: If the input is:
+
+// 02 55 10
+// 04 15 50
+// the output is:
+
+// Start:    02:55:10
+// End:    04:15:50
+// Difference: 01:20:40
+
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct Time_struct {
+   int hours;
+   int minutes;
+   int seconds;
+} Time;
+
+// Allocate and return a Time as per parameters
+Time* CreateTime(int hours, int minutes, int seconds) {
+   Time* newTime = NULL; //declare
+   newTime = (Time*)malloc(sizeof(Time)); // allocate memory address **
+   newTime->hours = hours;
+   newTime->minutes = minutes;
+   newTime ->seconds = seconds;
+   
+   return newTime;
+   
+}
+
+// Read integers hours, minutes, seconds;
+// create and return a Time using the input values
+Time* ReadTime() {
+   int hours;
+   int minutes;
+   int seconds;
+   scanf(" %d %d %d", &hours, &minutes, &seconds);
+
+   return CreateTime(hours, minutes, seconds);
+}
+
+Time* TimeDifference(Time* end, Time* start) {
+   Time* diff = NULL;
+    // allocate a new ptr of type time
+    //again easy to forget
+    diff = (Time*)malloc(sizeof(Time));
+   
+   // Begin with uncorrected arithmetic
+   diff->hours = end->hours - start->hours;
+   diff->minutes = end->minutes - start->minutes;
+   diff->seconds = end->seconds - start->seconds;
+
+   // fixing those negative hours and minutes  
+   // end:  05: 20: 10
+   // start: 03: 50: 45
+    if (diff->seconds <0){
+   diff->seconds = diff->seconds + 60;
+   diff-> minutes = diff-> minutes -1;
+    }
+    
+    if(diff->minutes <0) {
+   diff-> minutes = diff-> minutes + 60;
+   diff ->hours = diff ->hours -1;
+
+    }
+
+    return diff;
+   
+  }
+
+void PrintTime(Time* t) {
+   printf("%02d:%02d:%02d", t->hours, t->minutes, t->seconds);
+}
+
+int main(void) {
+   Time* start = NULL;
+   Time* end = NULL;
+   Time* difference = NULL;
+
+   start = ReadTime();
+   end = ReadTime();
+   difference = TimeDifference(end, start);
+
+   printf("Start:\t");
+   PrintTime(start);
+   printf("\nEnd:\t");
+   PrintTime(end);
+   printf("\nDifference: ");
+   PrintTime(difference);
+   printf("\n");
+
+   // Always free dynamically allocated memory when no longer needed
+   free(start);
+   free(end);
+   free(difference);
+
+   return 0;
+}
