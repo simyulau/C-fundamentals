@@ -1,0 +1,75 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+
+typedef struct GVCoin_struct {
+	bool isTails;
+    int flips;
+    int heads;
+} GVCoin;
+
+int ConsecutiveHeads(GVCoin coin, int goal) {
+   int numToss = 0;
+   while (numToss < goal){ // it's less than goal because 
+                           // numToss <= goal will run 1 more toss
+      coin = Flip(coin);
+
+      if (IsTails(coin)){
+         numToss = 0; // reset the streak because not consecutive anymore
+      }
+      else {
+         numToss++;
+         }
+
+        }
+   //return numToss; can't use numToss because this is the counter for reaching
+   //consecutive toss, nothing to do with total number of toss
+   //since coin is updated each turn, so throw it into a function that record tota l toss
+
+   return NumFlips(coin);          //*keypoint
+
+}
+
+
+GVCoin InitGVCoin(int seed) {
+	srand(seed);   // Set seed value for ramdom numbers
+	GVCoin coin;
+	coin.heads = 0;
+	coin.flips = 0;
+	coin.isTails = 0;
+	return coin;
+}
+
+GVCoin Flip(GVCoin coin) {
+	coin.isTails = ~rand() % 2;
+	coin.flips++;
+	if (!coin.isTails) {
+		coin.heads++;
+	}
+	return coin;
+}
+
+int NumFlips(GVCoin coin) {
+    return coin.flips;
+}
+
+int NumHeads(GVCoin coin) {
+    return coin.heads;
+}
+
+int NumTails(GVCoin coin) {
+    return coin.flips - coin.heads;
+}
+
+bool IsTails(GVCoin coin) {
+    return coin.isTails;
+}
+
+int main() {
+   GVCoin coin = InitGVCoin(15);
+	int numHeads = 5;
+	int flips = ConsecutiveHeads(coin, numHeads);
+	printf("Total number of flips for 5 consecutive heads: %d", flips);
+
+	return 0;
+}
