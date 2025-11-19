@@ -1,0 +1,78 @@
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+// Complete CapVowels(), which takes a string as a parameter and
+// returns a new string containing the string parameter with the 
+// first occurrence of each of the five English vowels (a, e, i, o, and u) capitalized.
+
+// Hint: Begin CapVowels() by copying the string parameter to a newly allocated string.
+
+// Ex: If the input is: management, output is mAnagEment
+
+char* CapVowels(char* original){
+    char* newString = (char*) malloc(strlen(original+1));
+    //no need for sizeof()
+
+    strcpy(newString, original);
+
+    int capitalized[5] = {0,0,0,0,0}; 
+    // for aeiou marker
+    // flag to 1 if vowel already found
+    //Recall in C:
+    //  0 means false
+    // !0 means true
+    //before cap: !captialized[0] means !0 = not false = true
+    //after cap: !capitalized[0] means captialized[0] =1, so now !1 = not true = false
+
+    // go through each element (char) in newString (copy of original) one by one to check for 1st aeiou
+    for (int i =0; newString[i] != '\0'; i++) 
+    {
+        char c = newString[i];
+        if (((c == 'a') || (c=='A')) && !capitalized[0]){
+            newString[i] = 'A';
+            capitalized[0] = 1;
+         }
+
+         if (((c == 'e') || (c=='E')) && !capitalized[1]){
+            newString[i] = 'E';
+            capitalized[1] = 1;
+         }
+
+          if (((c == 'i') || (c=='I')) && !capitalized[2]){
+            newString[i] = 'I';
+            capitalized[2] = 1;
+         }
+
+          if (((c == 'o') || (c=='O')) && !capitalized[3]){
+            newString[i] = 'O';
+            capitalized[3] = 1;
+         }
+          if (((c == 'u') || (c=='U')) && !capitalized[4]){
+            newString[i] = 'U';
+            capitalized[4] = 1;
+         }
+
+         }
+
+         return newString;
+
+}
+
+
+int main(){
+
+    char inputText[50];
+    char* resultText;
+    scanf("%s", inputText);
+    //no need for & in front of inputText, inputText is already an address!
+
+    resultText = CapVowels(inputText);
+    // key must = return value with a variable in int main part, otherwise, results in function gone!
+    printf("The original text is: %s\n", inputText);
+    printf("The changed text is: %s\n", resultText);
+
+
+    return 0;
+}
+
