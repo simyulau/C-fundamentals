@@ -1,0 +1,491 @@
+   38  cd ..
+   39  find . -name "xFile?"
+   40  find . -name "xFile*"
+   41  find . -name "xFile*" -exec mv { } { }.Lab6 
+   42  clear
+   43  find . -name "xFile*" -exec mv { } { }.Lab6 \; 
+   44  clear
+   45  find . -name "xFile*" -exec mv {} {}.Lab6 \;
+   46  ls lab6working
+   47  find . -name "xFile*" -exec chmod 775 {} \;
+   48  ls -l lab6working
+   49  echo $SHELL
+   50  echo $0
+   51  chsh
+   52  echo $0
+   53  echo $SHELL
+   54  exit
+   55  echo $0
+   56  echo $SHELL
+   57  echo $SHELL
+   58  echo $0
+   59  chsh
+   60  echo $0
+   61  exit
+   62  echo $0
+   63  echo $SHELL
+   64  cd farm
+   65  mkdir farm
+   66  pwd
+   67  cd farm
+   68  pwd
+   69  ..cd
+   70  .. cd
+   71  cd ..
+   72  pwd
+   73  ls -ld
+   74  ls -l
+   75  pwd
+   76  cd t3practice
+   77  pwd
+   78  ls -l
+   79  cd Supporting files Lab4
+   80  ls -lr
+   81  ls -l -R
+   82  pwd
+   83  chmod u+x lab4prac/lab4C1.c
+   84  ls -l
+   85  ls -l -R
+   86  gcc lab4C3.c -o lab4c
+   87  ./lab4c
+   88  clear
+   89  gcc lab4C2.c -o lab4c2
+   90  ./lab4c2
+   91  q
+   92  cd
+   93  cd ~/Desktop/
+   94  pwd
+   95  git clone https://github.com/simyulau/EECS2030-F25-workspace.git
+   96  git clone https://github.com/simyulau/EECS2030-F25-workspace.git
+   97  git clone https://github.com/simyulau/EECS2030-F25-workspace.git
+   98  git clone https://github.com/simyulau/EECS2030-F25-workspace.git
+   99  git clone https://github.com/simyulau/EECS2030-F25-workspace.git
+  100  eclipse4.35 &
+  101  eclipse4.34 &
+  102  eclipse4.36 &
+  103  pwd
+  104  ls
+  105  cd EECS2030-F25-workspace/
+  106  ls
+  107  git add *
+  108  git commit -m "Added hello world message"
+  109  git push
+  110  git push
+  111  pwd
+  112  cd ~/Desktop
+  113  eclipse4.36 &
+  114  pwd
+  115  ls
+  116  cd EECS2030-F25-workspace/
+  117  ls
+  118  git add *
+  119  git commit -m "eecs lab version"
+  120  git push
+  121  pwd
+  122  cd ~/Desktop/
+  123  ls
+  124  cd EECS2030-F25-workspace/
+  125  ls
+  126  eclipse4.36 &
+  127  pwd
+  128  cd ~/Desktop
+  129  ls
+  130  cd EECS2030-F25-workspace/
+  131  eclipse4.36 &
+  132  pwd
+  133  ~/Desktop
+  134  ~/Desktop/
+  135  eclipse4.36 &
+  136  exit
+  137  vim
+  138  ls
+  139  cd MockTestPractice/
+  140  ls
+  141  vim selfPractice1.c 
+  142  code .
+  143  pwd
+  144  gcc selfPractice1.c -o result530
+  145  ./result530
+  146  gcc selfPractice1.c -o result530
+  147  ./result530
+  148  clear
+  149  pwd
+  150  cd MockTestPractice
+  151  cd -
+  152  cd MockTestPractice
+  153  clear
+  154  pwd
+  155  gcc 2inlabselfpractice.c -oresult615
+  156  gcc 2inlabselfpractice.c -o result616
+  157  ./result616
+  158  gcc 2inlabselfpractice.c -o result615
+  159  clear
+  160  pwd
+  161  gcc 2inlabselfpractice.c -o result616
+  162  ./result616
+  163  gcc 2inlabselfpractice.c -o result616
+  164  ./result616
+  165  clear
+  166  pwd
+  167  gcc 2inlabselfpractice.c -o result630
+  168  ./result630
+  169  clear
+  170  gcc 2inlabselfpractice.c -o result630
+  171  ./result630
+  172  clear
+  173  gcc 2inlabselfpractice.c -o result630
+  174  ./result630
+  175  clear
+  176  gcc 2inlabselfpractice.c -o result630
+  177  ./result630
+  178  clear
+  179  gcc 2inlabselfpractice.c -o result630
+  180  ./result630
+  181  clear
+  182  gcc 2inlabselfpractice.c -o result110
+  183  ./result110
+  184  gcc 2inlabselfpractice.c 
+  185  ./a.out
+  186  pwd
+  187  ls
+  188  cd MockTestPractice/
+  189  ls
+  190  ..cd
+  191  cd ..
+  192  pwd
+  193  clear
+  194  ls
+  195  cd RweekSat/
+  196  ls
+  197  gcc oct11ch1.c -o 1.13
+  198  ./1.13
+  199  gcc oct11ch1.c -o 1.13
+  200  ./1.13
+  201  clear
+  202  gcc oct11ch1.c -o1.13
+  203  ./1.13
+  204  clear
+  205  gcc oct11ch1.c -o 1.13
+  206  ./1.13
+  207  pwd
+  208  ls
+  209  cd RweekSat/
+  210  pwd
+  211  ls
+  212  clear
+  213  gcc oct13ch2.c -o pm
+  214  ./pm
+  215  clear
+  216  gcc oct13ch2.c -o pm
+  217  ./pm
+  218  gcc oct13ch2.c -o pm
+  219  ./pm
+  220  20.00 5.00
+  221  gcc oct13ch2.c -o pm
+  222  ./pm
+  223  clear
+  224  gcc oct13ch2.c -o pm
+  225  ./pm
+  226  clear
+  227  gcc oct13ch2.c -o pm
+  228  ./pm
+  229  gcc oct13ch2.c -o pm
+  230  ./pm
+  231  gcc oct13ch2.c -o pm
+  232  ./pm
+  233  gcc oct13ch2.c -o pm
+  234  6 3
+  235  ./pm
+  236  pwd
+  237  ls
+  238  cd RweekSat/
+  239  pwd
+  240  gcc ch2.12.c -o 1148
+  241  ./1148
+  242  gcc ch2.12.c -o 11.48
+  243  gcc ch2.12.c -o 1148
+  244  ./1148
+  245  clear
+  246  gcc ch2.12.c -o 1148
+  247  ./1148
+  248  gcc ch2.12.c -o 1148
+  249  ./1148
+  250  ls
+  251  cd RweekSat/
+  252  ls
+  253  gcc zybook228.c -o 1014
+  254  ./1014
+  255  gcc zybook228.c -o1014
+  256  ./1014
+  257  ./1014
+  258  ./1014
+  259  ./1014
+  260  gcc zybook228.c -o 1014
+  261  ./1014
+  262  pwd
+  263  ls
+  264  cd RweekSat/
+  265  ls
+  266  clear
+  267  gcc satoct18.c
+  268  gcc satoct18.c -o 127
+  269  ./127
+  270  gcc satoct18.c -o 127 
+  271  ./127
+  272  gcc satoct18.c  -o127
+  273  ./127
+  274  gcc satoct18.c -o 127
+  275  ./127
+  276  gcc satoct18.c -o 127
+  277  ./127
+  278  clear
+  279  gcc ch3finally.c -o 229./229clear
+  280  clear
+  281  gcc ch3finally.c -o 231
+  282  clear
+  283  gcc ch3finally.c -o 231
+  284  clear
+  285  gcc ch3finally.c -o 234
+  286  gcc ch3finally.c -o 234
+  287  ./234
+  288  clear
+  289  gcc ch3finally.c -o 236
+  290  ./236
+  291  ./236
+  292  clear
+  293  gcc secondconvert.c -o 315
+  294  clear
+  295  gcc secondconvert.c -o 316
+  296  gcc secondconvert.c -o 316
+  297  ./316
+  298  pwd
+  299  ls
+  300  cd mocktestp/
+  301  clear
+  302  ls
+  303  gcc problem1.c -o543
+  304  clear
+  305  gcc problem1.c -o 1815
+  306  clear
+  307  gcc problem1.c -o 615
+  308  clear
+  309  gcc problem1.c -o 616
+  310  ./616
+  311  gcc problem1.c -o 616
+  312  pw
+  313  pwd
+  314  ls
+  315  cd mocktestp/
+  316  clear
+  317  gcc problem1.c -o 620
+  318  10 a
+  319  ./ 620
+  320  gcc problem1.c -o 620
+  321  ./620
+  322  ls
+  323  cd mocktestp/
+  324  ls
+  325  gcc xybook1013practice.c
+  326  ./a.out
+  327  ls
+  328  pwd
+  329  ls
+  330  cd lab-unix-structs
+  331  pwd
+  332  pwd
+  333  ls
+  334  ls -la
+  335  mkdir -p ~/lab-unix-structs/data
+  336  cd ~/lab-unix-structs
+  337  pwd
+  338  touch notes.txt todo.txt draft1.c draft2.c report1.md report2.md
+  339  touch data/sample1.txt data/sample2.txt data/special.txt
+  340  ls *.c
+  341  ls report*.md
+  342  ls data/sample?.txt
+  343  cp notes.txt notes.bak
+  344  mv draft1.c main.c
+  345  mv report1.md reportA.md
+  346  cp data/sample1.txt data/sample1.bak
+  347  ls
+  348  pwd
+  349  cd data
+  350  ls
+  351  cd .. lab-unix-structs
+  352  cd ~/lab-unix-structs
+  353  pwd
+  354  ls
+  355  ls -1 > files.txt
+  356  ls -1 >> files.txt
+  357  cat files.txt
+  358  ahead = `head -3 files.txt`
+  359  wc files.txt
+  360  head files.txt
+  361  tail files.txt
+  362  ls -1 | wc -l
+  363  ls
+  364  ls -1 | wc -l
+  365  sort < files.txt | head
+  366  sort < files.txt | tail
+  367  echo Hello EECS 2031!
+  368  "With spaces preserved"
+  369  clear
+  370  echo Hello EECS 2031!
+  371  echo "With spaces preserved"
+  372  echo 'Single quotes keep *everything* literal'
+  373  echo -e "line1\nline2"
+  374  echo -e "col1\tcol2"
+  375  echo "reminder: submit on time" >> notes.txt
+  376  echo "You are in: $(pwd)"
+  377  pwd
+  378  ls
+  379  gcc shapes.c
+  380  ./a.out
+  381  clear
+  382  pwd
+  383  gcc shapes.c -o 11
+  384  ./11
+  385  clear
+  386  clear
+  387  gcc -o output shapes.c
+  388  ./output <shapes.txt
+  389  gcc -o output shapes.c
+  390  ./output < shapes.txt
+  391  gcc -o output shapes.c
+  392  ./output <shapes.txt
+  393  gcc -o output shapes.c
+  394  ./output < shapes.txt
+  395  gcc -o output shapes.c
+  396  ./output < shapes.txt
+  397  gcc -o output shapes.c
+  398  ./output <shapes.txt
+  399  gcc -o output shapes.c
+  400  ./output < shapes.txt
+  401  gcc -o output shapes.c
+  402  ./output < shapes.txt
+  403  pwd
+  404  ls
+  405  ls
+  406  pwd
+  407  clear
+  408  pwd
+  409  ls
+  410  cd lab-unix-structs/
+  411  ls
+  412  cd data
+  413  ls
+  414  cd
+  415  ls
+  416  cd lab-unix-structs/
+  417  cd data
+  418  cd ..
+  419  ls
+  420  pwd
+  421  cd -
+  422  cd -
+  423  ls --color=always
+  424  cd
+  425  ls
+  426  ls --color=always
+  427  cd lab-unix-structs
+  428  ls
+  429  ls --color=always
+  430  gcc VowelStrings.c -o 301
+  431  ./301
+  432  gcc VowelStrings.c  -o 301
+  433  ./301
+  434  gcc VowelStrings.c -0 313
+  435  gcc VowelStrings.c  -o 333
+  436  ./333
+  437  clear
+  438  gcc TimeDiff.c -o 115
+  439  ./115
+  440  pwd
+  441  touch greetings.sh
+  442  vim greetings.sh
+  443  vim greetings.sh
+  444  greetings.sh Amy Mark
+  445  ./greetings.sh Amy Mark
+  446  chmod u+x greetings.sh
+  447  ./greetings.sh Amy Mark
+  448  touch myRead.sh
+  449  vim myRead.sh
+  450  man echo
+  451  vim myRead.sh
+  452  myRead.sh
+  453  chmod u+x myRead.sh
+  454  ./myRead.sh
+  455  vim myRead.sh
+  456  ./myRead.sh
+  457  vim myRead.sh
+  458  clear
+  459  ./greetings.sh Amy John
+  460  ./myRead.sh
+  461  vim myRead.sh
+  462  ./myRead.sh
+  463  vim greetings.sh
+  464  vim myRead.sh
+  465  pwd
+  466  ls
+  467  ls -a
+  468  ls -l
+  469  rm 115
+  470  ls
+  471  rm 301 312 333
+  472  ls
+  473  man chown
+  474  who
+  475  ps a
+  476  man history
+  477  history
+  478  history 10
+  479  cat shapes.
+  480  ls
+  481  cat shapes.txt
+  482  sort shapes.txt
+  483  man short
+  484  man sort
+  485  sort testsort.c
+  486  sort testsort.c
+  487  date
+  488  who
+  489  man who
+  490  man sleep
+  491  echo x*y
+  492  echo x '*' y
+  493  ls
+  494   ls *
+  495  echo '****'
+  496  echo \*\*\*
+  497  ls x*y
+  498  echo "The time is $(date)"
+  499  echo `The time is $(date)`
+  500  set
+  501  touch unix2
+  502  nano unix2
+  503  cat unix2
+  504  ls dirs
+  505  nano unix2
+  506  cat unix2
+  507  unix2
+  508  chomod +x unix2
+  509  chmod +x unix2
+  510  unix2
+  511  pwd
+  512  ls
+  513  nano unix2
+  514  cat unix2
+  515  unix2
+  516  nano unix2
+  517  unix2
+  518  text1 ='He said: "Give me $100."'
+  519  text1=\He said: "Give me $100."'
+text2="He said: \"Give me \$100.\""
+echo $text1
+echo $text2
+  520  text1='He said: "Give me $100."'
+  521  text2="He said: \"Give me \$100.\""
+  522  echo $text1
+  523  echo $text2
+  524  your_command > unix_bashScript.txt
+  525  history > unix_commandHistory.txt
