@@ -1,0 +1,41 @@
+Script started on 2025-12-09 18:30:55-05:00
+Default printer is: prism
+]0;sylau:/eecs/home/sylaucrimson 501 $ cat weakcat
+#!/bin/bash
+while read myline
+do
+echo $myline
+done < $1
+]0;sylau:/eecs/home/sylaucrimson 502 $ cat feedcat.c
+apple orange banana
+today is tuesday
+           leadingSpace
+trailing space           
+test with 1 slash "\" symbol
+test with multi (6) slashes "\\\\\\" for pairs of slash one will be an escape character
+testing with a slash end to skip newline at the end "\"
+if backslash is enclosed with double quotes, won't overwrite newline
+trying backlash again here..\
+Line10:test path /
+test with multi (4) path symbol ////
+testing newline\n
+note in the above line, only the backslash is removed, n still there
+theres an extra line below, see if it shows if it doesn't have newline
+no newline]0;sylau:/eecs/home/sylaucrimson 503 $ weaka[Kcat feedcat.c
+apple orange banana
+today is tuesday
+leadingSpace
+trailing space
+test with 1 slash "" symbol
+test with multi (6) slashes "\\\" for pairs of slash one will be an escape character
+testing with a slash end to skip newline at the end ""
+if backslash is enclosed with double quotes, won't overwrite newline
+trying backlash again here..Line10:test path /
+test with multi (4) path symbol ////
+testing newlinen
+note in the above line, only the backslash is removed, n still there
+theres an extra line below, see if it shows if it doesn't have newline
+]0;sylau:/eecs/home/sylaucrimson 504 $ exit
+exit
+
+Script done on 2025-12-09 18:32:20-05:00

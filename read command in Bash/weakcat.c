@@ -1,0 +1,5 @@
+#!/bin/bash
+while read myline
+do
+echo $myline
+done < $1
