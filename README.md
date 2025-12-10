@@ -1,5 +1,5 @@
 # C-fundamentals
-Collection of C programming exercises and notes
+Collection of small C programs embedded with notes. 
 
 
-Demonstrated user's knowledge and application in bash shell along with the linux environment
+Demonstrated user's knowledge and skills in applicable tools with bash in linux environment
